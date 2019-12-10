@@ -42,7 +42,7 @@ var renderActiveNote = function() {
     $noteTitle.val(activeNote.title);
     $noteText.val(activeNote.text);
   } else {
-    $noteTitle.attr("readonly", false);
+    $noteTitle.attr("revadonly", false);
     $noteText.attr("readonly", false);
     $noteTitle.val("");
     $noteText.val("");
