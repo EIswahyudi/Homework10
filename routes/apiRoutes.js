@@ -1,7 +1,9 @@
+var noteText = require("../db/noteText");
+
 const fs = require("fs");
 const util = require("util");
 const writeFileAsync = util.promisify(fs.writeFile);
-var noteText = require("../db/noteText");
+
 
 module.exports = function (app) {
     app.get("/api/notes", function (req, res) {
